@@ -1,0 +1,22 @@
+# Workflow
+# Should have the name
+name: Hello
+
+# on tells when the workflow runs
+on: 
+  workflow_dispatch:
+    
+# Jobs
+# Should be inside the workflow
+jobs:
+  say-hello:
+  # creates and Ephermal container with ubuntu runnning
+    runs-on: ubuntu-latest
+    steps:
+      - name: say-hello-everyone
+        run: echo "Hello Friends"
+# Steps
+# Should be inside the Jobs
+
+# Actions
+# Should be inside the Steps
